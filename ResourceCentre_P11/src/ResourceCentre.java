@@ -204,9 +204,9 @@ public class ResourceCentre {
 
 		for (int i = 0; i < camcorderList.size(); i++) {
 			
-			String assetTag = camcorderList.get(i).getAssetTag();
+//			String assetTag = camcorderList.get(i).getAssetTag();
 			
-			if (tag.equalsIgnoreCase(assetTag)				
+			if (tag.equalsIgnoreCase(camcorderList.get(i).getAssetTag())				// Extract variables
 					&& camcorderList.get(i).getIsAvailable() == true) {
 				
 				camcorderList.get(i).setIsAvailable(false);
@@ -237,9 +237,9 @@ public class ResourceCentre {
 		boolean isLoaned = false;
 
 		for (int i = 0; i < chromebookList.size(); i++) {
-			String assetTag = chromebookList.get(i).getAssetTag();
+//			String assetTag = chromebookList.get(i).getAssetTag();
 			
-			if (tag.equalsIgnoreCase(assetTag)
+			if (tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag())			// Extract variables
 					
 					&& chromebookList.get(i).getIsAvailable() == true) {
 				
