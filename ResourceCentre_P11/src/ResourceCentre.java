@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 
 public class ResourceCentre {
-
+// testing commit here
+	
 	private static final int optionQuit = 5;			// extract constants
 	
 	public static void main(String[] args) {
